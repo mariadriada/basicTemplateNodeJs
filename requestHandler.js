@@ -9,4 +9,5 @@ funtion home(request){
 	response.end();
 }
 
+exports.home = home;
 
