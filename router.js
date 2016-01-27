@@ -1,5 +1,5 @@
 function route (handle, pathname, response) {
-	consle.log('To point routing'+pathname);
+	console.log('To point routing'+pathname);
 
 	// valid pathname ?
 	if (typeof handle[pathname] === 'function'){
