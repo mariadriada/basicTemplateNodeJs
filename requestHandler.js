@@ -1,7 +1,7 @@
 var querystring	= require("querystring");
 
 //Handler of request  to /
-function home(request){
+function home(response){
 	console.log('Handler to / ');
 
 	response.writeHead(200, {"Content-Type": "text/html"});
