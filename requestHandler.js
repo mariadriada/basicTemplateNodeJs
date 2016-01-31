@@ -13,7 +13,7 @@ function home(response){
 	    '<textarea name="text" rows="20" cols="60"></textarea>'+
 	    '<input type="submit" value="Enviar texto" />'+
 	    '</form>'+
-	    '</body>'+
+	    '</body>'+	
 	    '</html>';
 
     response.writeHead(200, {"Content-Type": "text/html"});
@@ -21,5 +21,18 @@ function home(response){
     response.end();
 }
 
+/*
+Function to send data of test
+response [] : object to return 
+*/
+function data(response){
+	var data = "estos son los datos ";
+
+	response.writeHead(200, {"Content-Type": "text/html"});
+	response.write(data);
+    response.end();
+}
+
 exports.home = home;
+exports.data = data;
 
